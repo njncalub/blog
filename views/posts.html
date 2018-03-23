@@ -6,6 +6,9 @@
     <div class="attribution">
       {{_('Posted {date}', date=doc.dates.published)}}
     </div>
+    <div class="attribution">
+    {{_('Categories: {category}', category=doc.category)}}
+    </div>
   </div>
   {{doc.html|safe}}
   <div class="meta-alt">

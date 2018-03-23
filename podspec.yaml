@@ -8,10 +8,7 @@ error_routes:
 localization:
   default_locale: en
   locales:
-  - de
   - en
-  - ja
-  - zh
 
 static_dirs:
 - static_dir: /dist/
@@ -29,13 +26,4 @@ preprocessors:
 deployments:
   default:
     destination: local
-    out_dir: my-codelab-launch/
-  gcs:
-    destination: gcs
-    bucket: mybucket.example.com
-  s3:
-    destination: s3
-    bucket: mybucket.example.com
-  sandbox:
-    destination: gcs
-    bucket: sandbox.growlaunches.com
+    out_dir: generated/

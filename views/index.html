@@ -4,12 +4,12 @@
 
   <div class="banner">
     <div class="tagline">{{_(doc.tagline)}}</div>
-    <p><a href="http://www.flickr.com/photos/nasahqphoto/"><img alt="Image credit: NASA" src="{{g.static('/source/images/banner3.jpg').url.path}}"></a>
+    <p><a href="https://www.flickr.com/photos/djokson"><img alt="Image credit: Djokson" src="{{g.static('/source/images/banner4.png').url.path}}"></a>
   </div>
 
   {{doc.html|safe}}
 
-  <h3>{{_('Latest updates')}}</h3>
+  <h2>{{_('Latest updates')}}</h2>
   <div class="posts">
     {% for post in g.docs('posts', locale=doc.locale)[0:3] %}
     <div class="post">
